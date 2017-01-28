@@ -1,0 +1,32 @@
+body {
+  background-color:lightblue;
+  font-family: "Playfair Display";
+}
+div{
+  background-color: yellow;
+  width: 30%;
+  height: 30%;
+  align-self: center;
+  position:relative;
+  margin: auto;
+}
+p{
+  background-color: lightgreen;
+}
+h1{
+  background-color: orange;
+}
+button{
+  background-color: purple;
+  color:#fff;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  border-style: groove;
+  border-top-color: inherit;
+  padding: 2%;
+  cursor:copy;
+}
+button:hover{
+  background-color: green;
+}

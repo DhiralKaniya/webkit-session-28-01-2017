@@ -1,0 +1,8 @@
+1 :- <html> it is use to write html syntax on browser </html>
+2 :- <head> it is use to implement text, script, stylesheet, relation in the head part of the browser </head>
+3 :- <body> it is use to write contain on the body part of the browser </body>
+4 :- <link> it is use to link stylesheet, js, online link as well as any kind of object link </link>
+5 :- <style> it is use to write style script with the same page which we want to use in the browser<style>
+6 :- <script> it is use to write java script in the browser <script>
+7 :- <h1><h2><h3><h4><h5><h6> it is use to add heading in the web browser with the different sizes</h6>/h5>/h4>/h3>/h2>/h1>
+8 :- <div>it is use</div>

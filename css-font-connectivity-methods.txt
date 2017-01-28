@@ -1,0 +1,5 @@
+1 :- External CSS
+  Create one file with .css extension e.g style.css
+2 :- Connecting with cdnjs.com
+  -Go to the cdnjs.com
+  -
