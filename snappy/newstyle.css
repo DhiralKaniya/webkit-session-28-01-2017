@@ -1,33 +1,53 @@
 html,body {
-  background-color:white;
-  width: 100%;
+
   box-sizing: border-box;
-  height: 100%;
+}
+body.homepage{
   background-image: url("background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
 
+}
 *,*::before,*::after{
   box-sizing: inherit;
 }
 div.main{
-  width: 30%;
+  width: 10%;
+  float: left;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  left : 15%;
+  transform: translateY(-50%);
 }
 h1.logo{
-
   width: 200px;
   height: 15px;
+  text-align: center;
+  color: ##D35400;
+  font-size: 3em;
 }
 p.contain{
   height:15px;
   width: 200px;
-
+  padding: 15px;
+  font-style:italic;
+  text-align: center;
+  color: white;
 }
 button.sign-up{
   height: 50px;
   width: 200px;
   padding: 5px;
+  border: none;
+  background-color: none ;
+  border-radius: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+button.sign-up:hover{
+  background-color:white;
+  opacity: 0.9;
 }
 
 div.sidebar{
@@ -45,4 +65,26 @@ div.main-content{
   background-color: #A3E4D7 ;
   bottom: 0;
   width: 75%;
+}
+/*
+chat page css
+*/
+/* Member data chatbox */
+div.member-data{
+  top:0;
+  bottom:0;
+  left:0;
+  width:25%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+}
+.message-data{
+  top:0;
+  bottom: 0;
+  left: 25%;
+  width: 75%;
+  position: fixed;
+  height: 100%;
+  background-color: purple;
 }
