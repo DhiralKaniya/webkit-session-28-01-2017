@@ -1,10 +1,35 @@
 html,body {
   background-color:white;
-  font-family: "Playfair Display";
-  height: 100%;
   width: 100%;
-  clear: both;
+  box-sizing: border-box;
+  height: 100%;
+  background-image: url("background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+div.main{
+  width: 30%;
+}
+h1.logo{
+
+  width: 200px;
+  height: 15px;
+}
+p.contain{
+  height:15px;
+  width: 200px;
+
+}
+button.sign-up{
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+}
+
 div.sidebar{
   left:0;
   top:0;

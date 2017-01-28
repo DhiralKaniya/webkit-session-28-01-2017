@@ -29,3 +29,7 @@
     height:100%;
     width:30%;
   }
+  5 :- What top 50% do ?
+  it will bring element down.
+  6 :- clssname.hover
+    hover is the property that call when mouse is come up to component of the object.
