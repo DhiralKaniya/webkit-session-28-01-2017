@@ -2,4 +2,27 @@
   Create one file with .css extension e.g style.css
 2 :- Connecting with cdnjs.com
   -Go to the cdnjs.com
-  -
+3 :- Property of the css
+    -background-color
+    -background
+    -border
+    -height
+    -width
+    -position
+    -top
+    -bottom
+    -left
+    -margin
+    -padding
+    -float
+    -align-self
+4 :- Creating class in css
+  - Synatx
+  .class_name{
+    property : value;
+  }
+  -e.g
+  .sidebar{
+    height:100%;
+    width:30%;
+  }

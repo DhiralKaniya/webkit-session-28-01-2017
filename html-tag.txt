@@ -5,4 +5,5 @@
 5 :- <style> it is use to write style script with the same page which we want to use in the browser<style>
 6 :- <script> it is use to write java script in the browser <script>
 7 :- <h1><h2><h3><h4><h5><h6> it is use to add heading in the web browser with the different sizes</h6>/h5>/h4>/h3>/h2>/h1>
-8 :- <div>it is use</div>
+8 :- <div></div>
+9 :- <button>it is used to put button in the html browser</button>

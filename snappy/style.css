@@ -1,14 +1,30 @@
-body {
+html,body {
   background-color:lightblue;
   font-family: "Playfair Display";
+  height: 100%;
+  width: 100%;
+  clear: both;
 }
 div{
-  background-color: yellow;
-  width: 30%;
-  height: 30%;
   align-self: center;
-  position:relative;
-  margin: auto;
+  background-color: yellow;
+  width: 70%;
+  float :left;
+}
+div.sidebar{
+  align-self: center;
+  left:0;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 30%;
+  background-color: green;
+}
+div.main-content{
+  left:30%;
+  width: 70%;
+  height: 100%;
+  background-color: black;
 }
 p{
   background-color: lightgreen;
@@ -29,4 +45,7 @@ button{
 }
 button:hover{
   background-color: green;
+}
+.primary-button{
+  background-color: red;
 }
