@@ -2,6 +2,9 @@
   Create one file with .css extension e.g style.css
 2 :- Connecting with cdnjs.com
   -Go to the cdnjs.com
+  -get the url which we want
+  -combine it with the link tag
+  e.g :- <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" rel="stylesheet">
 3 :- Property of the css
     -background-color
     -background
