@@ -1,0 +1,18 @@
+step 1 :- Install web server in your machine from the Chrome.
+https://chrome.google.com/webstore/category/extensions
+
+step 2 :- After installed the webserver on your machine select directory which we want to upload.
+choose folder
+
+step 3 :- Please seletect Option as per your requirement.
+
+Preferable checck mark is
+    Run in Backgrouund
+    Automatically Show index.html
+
+step 4 :- Enter Port
+  Preferable port number is 80
+
+click link which provide in web server or you can go through 127.0.0.1:80
+
+Please install atom editor for the web development in webkit session.
