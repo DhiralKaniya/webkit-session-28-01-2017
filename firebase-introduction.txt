@@ -1,0 +1,112 @@
+firebase documentation
+- https://firebase.google.com/docs/web/setup
+
+firebase link
+- https://firebase.google.com
+
+Create New Project
+- give a name to Project
+
+-After Creating project you will get home page panel
+-After reaching that particular project select scripting where you want to implememt the project.
+
+-Change in Rule
+  auth == null;
+
+-Add firebase in out script
+like :-
+    <!--Firebase js file -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB-efHBg6Abr5q_PC3PR_Ow4s6UzpBPbW0",
+        authDomain: "snappy-7328a.firebaseapp.com",
+        databaseURL: "https://snappy-7328a.firebaseio.com",
+        storageBucket: "snappy-7328a.appspot.com",
+        messagingSenderId: "133956073878"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+-Create a database in Firebase
+
+step 1 :- Create database on firebase
+
+step 2 :- Make url in the app.js
+
+    var database = firebase.dataBase();
+
+step 3 :- Make Database Reference
+    -it will create an object of the key which specify.
+
+    var databaseRef = firebase.ref("users");
+
+step 4 :- Take snapshot
+
+    databaseRef.on('value',function(snapshot){
+        console.log(snapshot);
+    });
+
+/* for access value of snapshot */
+    databaseRef.on('value',function(snapshot){
+        console.log(snapshot.val());
+    });
+
+/* Data which you are getting in console is your real time data */
+
+step 5 :- write data with set property with databaseRef
+
+    databaseRef.set({
+      "email":"dhiralkaniya3146@gmail.com"
+    });
+
+step 6 :- Create userRef is the branch as root with the child so we can add multple record from our website.
+//create userRef
+    var userRef = database.ref("users");
+
+//Create its branch
+
+    userRef.child("1st-child").set({
+      "Name":"Dhiral Kaniya"
+    })
+    userRef.child("2nd-child").set({
+      "Name":"Harmeet Singh",
+      "Email":"harmeet@gmail.com"
+    });
+
+-sing in with Google
+
+step 1 :- Go to Authentication
+
+step 2 :- Enable Email/password which is specify google password
+
+step 3 :- Add your local Domain to use of Add Domain
+
+step 4 :- go to authentication documentation
+      - Google Sign-in authenticaiton
+
+step 5 :- Take Provider from the documentation
+
+step 6 :- Create provider object in the function where we want to authenticate
+
+step 7 :- Take firebase authentication from the documentation
+
+      firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        // ...
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+      });
+
+//By using above step you can easily embedded google+ in your application with the use of firebase
