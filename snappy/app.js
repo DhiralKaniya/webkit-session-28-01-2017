@@ -1,4 +1,8 @@
-var logoDetails = document.getElementById('sign-up-btn');
-console.log(logoDetails);
-var logoId = logoDetails.id;
-console.log(logoId);
+//Call when sign up button will click
+click("sign-up-btn",function(){
+    logInUser();
+});
+//call when logout button will click
+click("log-in-btn",function(){
+  logOutUser();
+})

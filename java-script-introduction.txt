@@ -104,3 +104,81 @@ console.log(logoDetails);
 To access id only
 var logoId = logoDetails.id;
 console.log(logoId);
+
+*To add Evenet Listener*
+Syntax 1:
+  VarName.addEventListener("Event",function(){
+    /* StateMent */
+    console.log("Listener calls");
+  });
+
+example :-
+var logoButton = document.getElementById('sign-up-btn');
+logoButton.addEventListener("click",function(){
+  console.log("Button Was Click");
+});
+
+Syntax 2 :
+VarName.addEventListener("Event",functionName);
+
+example :-
+var logoButton = document.getElementById('sign-up-btn');
+function functionName(){
+  console.log("Button Click");
+}
+logoButton.addEventListener("click",functionName);
+
+
+*Example *
+
+var logoButton = document.getElementById('sign-up-btn');
+/* Decalring the function which we can use commonaly for multiple elements*/
+function click(elementId, callFunction){
+  var element = document.getElementById(elementId);
+  /* it is check that element is exsist or not */
+  if(element){
+    var elementId = element.id;
+    element.addEventListener("click",callFunction);
+  }
+  else {
+    console.log("Element not found");
+  }
+}
+
+/* Calling the function */
+click(logoButton,fn);
+
+/* fn function implements */
+function fn(){
+  console.log("Button Click");
+}
+
+
+*Eample 2 */
+function click(elementId, callFunction){
+  var element = document.getElementById(elementId);
+  /* it is check that element is exsist or not */
+  if(element){
+    var elementId = element.id;
+    element.addEventListener("click",callFunction);
+  }
+  else {
+    console.log("Element not found");
+  }
+}
+/* We can use anonyms method also **/
+click("sign-up-btn",function(){
+    console.log("Anonyms Function is Call");
+});
+
+/* Exaple 3 */
+//just replace click calling function method with as below //
+
+click("sign-up-btn",function(){
+  redirect("chat.html");
+});
+
+/* create new function as redirect **/
+function redirect(path){
+  window.location = path;
+}
