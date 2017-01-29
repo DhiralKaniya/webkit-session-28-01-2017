@@ -1,0 +1,106 @@
+1 :-  Save file with .js instruction
+  example :- app.js
+
+2 :-  Open Console in Browser
+  Key Words ctrl + J
+
+3 :-  To write anything in console
+  Syntax:- console.log("Value");
+  Systax:- console.log(varname);
+
+4 :-  If..else statement in js
+
+Syntax :-
+if(condition){
+
+}else if(condition){
+
+}else{
+
+}
+
+example :-
+var a = 5;
+if(a>5){
+  console.log("a is Greater than 4");
+}
+else if(a<5){
+  console.log("A is lesser than 5");
+}
+else{
+  console.log("A is equal to 5");
+}
+
+5 :- function in js
+
+syntax :-
+*create a function
+function functionname(argument1,argrument2,...,argumentN){
+  /*
+  Statement ...
+  */
+}
+* call function
+functionname()
+
+function funcationName(functions){
+  functions();
+}
+functionName(funciton(){
+  console.write("This is function with in function");
+});
+
+
+Q :- why js function does not allows us to pass function as parameter ?
+A :- function is treated as first class treater same as float,int,string.
+
+Q :- What is DOM ?
+Document Object Model.
+it is Object Oriented Way of HTML.
+Its toughest part of the javascript.
+
+*DOM
+
+1 :- To take whole document object in our
+console.write(document);
+
+2 :- To Get Details from particular class
+var VarName = document.getElementByClassName(ClassName);
+
+(*Note :- it return data in array format*)
+
+*example:-
+var logoClass = document.getElementsByClassName('logo');
+console.log(logoClass);
+
+*example
+var logoClassName = document.getElementsByClassName('logo')[0];
+console.log(logoClassName);
+
+*example :- to convert it into text content
+var logoClassN = document.getElementsByClassName('logo')[0].textContent;
+console.log(logoClassN);
+
+*Example
+
+var logoArray = document.getElementsByClassName('logo');
+var logoNameDetails = logoArray[0];
+var logoName = logoNameDetails.textContent;
+
+console.log(logoArray);
+console.log(logoNameDetails);
+console.log(logoName);
+
+*Access varible by Document Get Element by ID
+
+Syntax
+var varname = document.getElementById('idName');
+console.log(varname);
+
+Example
+var logoDetails = document.getElementById('sign-up-btn');
+console.log(logoDetails);
+
+To access id only
+var logoId = logoDetails.id;
+console.log(logoId);
