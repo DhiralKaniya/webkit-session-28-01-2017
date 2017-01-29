@@ -1,0 +1,23 @@
+
+//Setting value on
+databaseRef.set({
+  "email":"dhiralkaniya@gmail.com"
+});
+
+//create userRef
+var userRef = database.ref("users");
+
+//Create its branch
+userRef.child("1st-child").set({
+  "Name":"Dhiral Kaniya"
+})
+userRef.child("2nd-child").set({
+  "Name":"Harmeet Singh",
+  "Email":"harmeet@gmail.com"
+});
+//Take Snapshot of database
+databaseRef.on('value',function(snapshot){
+    console.log(snapshot.val());
+});
+
+//console.log(databaseRef.name);
