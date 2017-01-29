@@ -182,3 +182,22 @@ click("sign-up-btn",function(){
 function redirect(path){
   window.location = path;
 }
+
+
+/* How to create obect in javascript */
+
+var user = {
+  name:"Dhiral";
+}
+console.log(user.name);
+
+/* How to create and call function in object with javascript */
+
+var user = {
+  name: "Dhiral",
+  sayHello: function(){
+    console.log("Say Hello Call");
+  }
+}
+console.log(user.name);
+user.sayHello();
