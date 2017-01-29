@@ -201,3 +201,49 @@ var user = {
 }
 console.log(user.name);
 user.sayHello();
+
+
+/* To create an array and call it out in our object */
+//Call when sign up button will click
+click("sign-up-btn",function(){
+    logInUser();
+});
+//call when logout button will click
+click("log-in-btn",function(){
+  logOutUser();
+})
+
+//objects are in js
+
+var user1 = {
+  id:1,
+  name: "Dhiral",
+  username: "dhiralkaniya",
+  sayHello: function(){
+    console.log("Say Hello Call");
+  }
+};
+var user2 = {
+  id:2,
+  name: "Harmeet",
+  username: "paji",
+  sayHello: function(){
+    console.log("Say Hello Call");
+  }
+};
+var users = [
+  user1,user2
+];
+
+for(var i=0;i<users.length;i++){
+  var user = users[i];
+  console.log(user.sayHello());
+}
+
+/* There is two method to deal with object */
+/* one is we understood above */
+/* second is as below */
+
+var message = new Object();
+message.text= "Hello";
+console.log(message.text);
