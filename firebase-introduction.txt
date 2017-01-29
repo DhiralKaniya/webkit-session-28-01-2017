@@ -98,6 +98,7 @@ step 7 :- Take firebase authentication from the documentation
         // The signed-in user info.
         var user = result.user;
         // ...
+        createUser(user.uid,user.displayName,user.email);
       }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -110,3 +111,31 @@ step 7 :- Take firebase authentication from the documentation
       });
 
 //By using above step you can easily embedded google+ in your application with the use of firebase
+
+step 8 :- if the user is successfull create user with the
+
+    function createUser(uid,name,email){
+      // Get a reference to the database service
+      /*
+        This function is call when user is click on sign-in-with google button and its authorised used.
+      */
+      var database = firebase.database();
+      var userRef = database.ref("users");
+
+      var user = {
+        id : uid,
+        name : name,
+        email : email
+      }
+      userRef.child(uid).set(user).then(function(){
+        redirect("chat.html");
+      });
+    }
+
+step 9 :- Change the database authentication rule with auth != null
+-got to the Manage user
+-user get the currently signed-in user method
+-create ifUserisLoggedIn function
+-go through that function
+-take that code in to our function
+-call that method from the app.js

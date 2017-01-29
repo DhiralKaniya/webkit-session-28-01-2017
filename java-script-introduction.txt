@@ -155,95 +155,95 @@ function fn(){
 
 
 *Eample 2 */
-function click(elementId, callFunction){
-  var element = document.getElementById(elementId);
-  /* it is check that element is exsist or not */
-  if(element){
-    var elementId = element.id;
-    element.addEventListener("click",callFunction);
-  }
-  else {
-    console.log("Element not found");
-  }
-}
+    function click(elementId, callFunction){
+      var element = document.getElementById(elementId);
+        /* it is check that element is exsist or not */
+          if(element){
+            var elementId = element.id;
+            element.addEventListener("click",callFunction);
+          }
+          else {
+            console.log("Element not found");
+          }
+    }
 /* We can use anonyms method also **/
-click("sign-up-btn",function(){
-    console.log("Anonyms Function is Call");
-});
+    click("sign-up-btn",function(){
+        console.log("Anonyms Function is Call");
+    });
 
 /* Exaple 3 */
 //just replace click calling function method with as below //
-
-click("sign-up-btn",function(){
-  redirect("chat.html");
-});
+    click("sign-up-btn",function(){
+      redirect("chat.html");
+    });
 
 /* create new function as redirect **/
-function redirect(path){
-  window.location = path;
-}
+    function redirect(path){
+      window.location = path;
+    }
 
 
 /* How to create obect in javascript */
 
-var user = {
-  name:"Dhiral";
-}
-console.log(user.name);
+    var user = {
+      name:"Dhiral";
+    }
+    console.log(user.name);
 
 /* How to create and call function in object with javascript */
 
-var user = {
-  name: "Dhiral",
-  sayHello: function(){
-    console.log("Say Hello Call");
-  }
-}
-console.log(user.name);
-user.sayHello();
+    var user = {
+      name: "Dhiral",
+      sayHello: function(){
+        console.log("Say Hello Call");
+      }
+    }
+    console.log(user.name);
+    user.sayHello();
 
 
 /* To create an array and call it out in our object */
 //Call when sign up button will click
-click("sign-up-btn",function(){
-    logInUser();
-});
+    click("sign-up-btn",function(){
+        logInUser();
+    });
+
 //call when logout button will click
-click("log-in-btn",function(){
-  logOutUser();
-})
+    click("log-in-btn",function(){
+      logOutUser();
+    })
 
-//objects are in js
+//objects are in js is as below
 
-var user1 = {
-  id:1,
-  name: "Dhiral",
-  username: "dhiralkaniya",
-  sayHello: function(){
-    console.log("Say Hello Call");
-  }
-};
-var user2 = {
-  id:2,
-  name: "Harmeet",
-  username: "paji",
-  sayHello: function(){
-    console.log("Say Hello Call");
-  }
-};
-var users = [
-  user1,user2
-];
+    var user1 = {
+      id:1,
+      name: "Dhiral",
+      username: "dhiralkaniya",
+      sayHello: function(){
+        console.log("Say Hello Call");
+      }
+    };
+    var user2 = {
+      id:2,
+      name: "Harmeet",
+      username: "paji",
+      sayHello: function(){
+        console.log("Say Hello Call");
+      }
+    };
+    var users = [
+      user1,user2
+    ];
 
-for(var i=0;i<users.length;i++){
-  var user = users[i];
-  console.log(user.sayHello());
-}
+    for(var i=0;i<users.length;i++){
+      var user = users[i];
+      console.log(user.sayHello());
+    }
 
 /* There is two method to deal with object */
 /* one is we understood above */
 /* second is as below */
 
-var message = new Object();
-message.text= "Hello";
-console.log(message.text);
+    var message = new Object();
+    message.text= "Hello";
+    console.log(message.text);

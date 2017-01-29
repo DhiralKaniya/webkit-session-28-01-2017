@@ -1,0 +1,12 @@
+json syntax:-
+
+{
+  "Key":"value",
+  "functionName":function()
+  {
+    "Key":value,
+  },
+  "ArrayName":{
+    "key":"value",
+  }
+}

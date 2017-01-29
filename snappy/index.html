@@ -1,22 +1,34 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Snappy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"/>
-    <link rel="stylesheet" href="newstyle.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  </head>
-  <body class="homepage">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="homepage">
     <div class="main">
-      <h1 class="logo">Snappy</h1>
-      <p class="contain">
-        Talk with the World
-      </p>
-      <button id="sign-up-btn" class="sign-up" >
-        <span></spna>sign in with google
-      </button>
-      <script type="text/javascript" src="function.js"></script>
-      <script type="text/javascript" src="app.js"></script>
+        <h1 class="logo">Snappy</h1>
+        <p class="tagline">
+            An instant chat platform.
+        </p>
+        <button id="signin-button" class="button">Sign in with Google</button>
     </div>
-  </body>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB-efHBg6Abr5q_PC3PR_Ow4s6UzpBPbW0",
+        authDomain: "snappy-7328a.firebaseapp.com",
+        databaseURL: "https://snappy-7328a.firebaseio.com",
+        storageBucket: "snappy-7328a.appspot.com",
+        messagingSenderId: "133956073878"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
 </html>

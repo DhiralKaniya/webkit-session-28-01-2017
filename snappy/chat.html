@@ -1,74 +1,53 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Snappy | Chat</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css"/>
-    <link rel="stylesheet" href="newstyle.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  </head>
-  <body>
-    <div class = "member-data">
-      <div class = "user-info">
-        <span class= "user blog">Dhiral Kaniya</span>
-        <span class="logout"><img src="icon/logout.png" id="log-in-btn" class="logout-img"/></spna>
-      </div>
-      <div class = "user-data">
-        <div class = "user">
-          <span class="user-name">Rutvij Patel</span>
-          <span ><img src="images/1.jpg" class="user-image" /> </span>
+<head>
+    <title>Snappy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="member-area">
+        <div class="user-info">
+            <span id="username"></span>
+            <span class="logout">Log out</span>
         </div>
-      </div>
-      <div class = "user-data active">
-        <div class = "user">
-          <span class="user-name">Harmeet Paji</span>
-          <span ><img src="images/2.jpg" class="user-image" /> </span>
+
+        <div class="members" id="members">
         </div>
-      </div>
-      <div class = "user-data">
-        <div class = "user">
-          <span class="user-name">Shaaz Manjiyani</span>
-          <span ><img src="images/1.jpg" class="user-image" /> </span>
-        </div>
-      </div>
     </div>
-    <div class = "message-data">
-      <div class = "message">
-        <div class ="messages user">
-          Hello
+
+    <div class="message-area">
+        <div class="chat-info">
+            Anamika
         </div>
-        <div class ="messages">
-          How are you ?
+
+        <div class="messages" id="messages">
+
         </div>
-        <div class ="messages user">
-          I am fine. What about you ?
-        </div>
-        <div class ="messages">
-          I am also Fine.
-        </div>
-        <div class ="messages user">
-          How's your day ?
-        </div>
-        <div class ="messages">
-            My day is awesome .
-        </div>
-        <div class ="messages user">
-           Yaa
-        </div>
-        <div class ="messages">
-          What about your ?
-        </div>
-        <div class ="messages user">
-          What about your ?
-        </div>
-        <div class ="messages">
-          What about your ?
-        </div>
+
         <div class="chat-form">
-          <input type="text" class="chat-message" placeholder="Enter Your Message" />
+            <input type="hidden" id="chat-id" />
+            <input id="message-text" type="text" class="chat-message" placeholder="Write your message and presss enter..." />
+            <button id="send-button">Send</button>
         </div>
-      </div>
     </div>
+
+
+        <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyB-efHBg6Abr5q_PC3PR_Ow4s6UzpBPbW0",
+            authDomain: "snappy-7328a.firebaseapp.com",
+            databaseURL: "https://snappy-7328a.firebaseio.com",
+            storageBucket: "snappy-7328a.appspot.com",
+            messagingSenderId: "133956073878"
+          };
+          firebase.initializeApp(config);
+        </script>
     <script type="text/javascript" src="function.js"></script>
     <script type="text/javascript" src="app.js"></script>
-  </body>
+    <script type="text/javascript" src="chat.js"></script>
+</body>
 </html>
